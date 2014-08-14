@@ -1,0 +1,7 @@
+We can use the cron utility that is a package linux supplies.
+Cron sets the certain script to be executed on a regular basis.
+In our case we will only use it to define the hour and the minutes since we want it to work every day.
+It should look something like this:
+
+# m h dom mon dow   command
+0 22 * * * bash /usr/local/bin/backup.sh
